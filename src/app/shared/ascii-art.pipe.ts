@@ -32,6 +32,7 @@ export class AsciiArtPipe implements PipeTransform {
         break;
 
       default:
+        selectedFont = Isometric3;
         break;
     }
 
