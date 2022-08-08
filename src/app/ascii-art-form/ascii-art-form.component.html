@@ -2,7 +2,7 @@
     <div class="bg-indigo-100 w-96 h-96 flex flex-col items-center justify-around">
         <h3 class="relative h-full ml-5 mt-5 p-0 text-5xl font-extralight self-start text-indigo-300 select-none">input</h3>
         <div class="h-full mx-20">
-            <input placeholder="Type text.." class="text-gray-600 focus:outline-none leading-tight text-center font-medium border rounded-xl w-full py-2" [(ngModel)]="text" required [maxlength]="getInputMaxLength()">
+            <input placeholder="Type text.." class="lowercase text-gray-600 focus:outline-none leading-tight text-center font-medium border rounded-xl w-full py-2" [(ngModel)]="text" required [maxlength]="getInputMaxLength()">
             <div class="text-center">
                 <mat-error class="text-indigo-500 font-extralight text-sm" *ngIf="text.length < inputLengthMin || text.length > inputLengthMax">
                 2 (mobile) or 5 (web) chars!
