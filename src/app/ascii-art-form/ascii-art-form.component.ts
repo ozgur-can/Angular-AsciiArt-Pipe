@@ -8,6 +8,8 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 export class AsciiArtFormComponent implements OnInit {
   text: string = '';
   fontName: string = 'Standard';
+  inputLengthMin: number = 2;
+  inputLengthMax: number = 5;
   isSmallScreen = this.breakpointObserver.isMatched('(max-width: 768px)');
 
   constructor(private breakpointObserver: BreakpointObserver) {}
@@ -16,8 +18,8 @@ export class AsciiArtFormComponent implements OnInit {
 
   getInputMaxLength() {
     if (this.isSmallScreen) {
-      return 2;
-    } else return 5;
+      return this.inputLengthMin;
+    } else return this.inputLengthMax;
   }
 
   onFontChange(event: Event) {

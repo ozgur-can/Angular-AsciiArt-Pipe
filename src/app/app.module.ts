@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AsciiArtFormComponent } from './ascii-art-form/ascii-art-form.component';
 import { AsciiArtPipe } from './shared/ascii-art.pipe';
 import { LayoutModule } from '@angular/cdk/layout'; 
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { LayoutModule } from '@angular/cdk/layout';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    LayoutModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
