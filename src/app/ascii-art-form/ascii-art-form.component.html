@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="w-full h-full px-24">
-            <select [selectedIndex]="0" (change)="onFontChange($event)" id="font-name" class="text-gray-400 text-center font-medium appearance-none w-full bg-gray-50 p-2 leading-tight rounded-xl" name="" id="">
+            <select [selectedIndex]="0" (change)="onFontChange($event)" class="text-gray-400 text-center font-medium appearance-none w-full bg-gray-50 p-2 leading-tight rounded-xl">
                 <option value="Isometric3">Select font</option>
                 <option value="Isometric3" selected>Isometric3</option>
                 <option value="Standard">Standard</option>
@@ -22,6 +22,6 @@
     </div>
     <div class="bg-gradient-to-tl from-indigo-100 to-white min-w-max w-96 h-96 flex flex-col items-center justify-center p-5">
         <h3 class="relative h-full p-0 text-5xl font-extralight self-start text-indigo-200 select-none">output</h3>
-        <pre #output class="min-h-full" class="h-full text-indigo-600" contenteditable="true">{{this.text | asciiart:fontName}}</pre>
+        <pre #output class="min-h-full select-none" class="h-full text-indigo-600">{{this.text | asciiart:fontName}}</pre>
     </div>
 </div>
