@@ -6,7 +6,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./ascii-art-form.component.css'],
 })
 export class AsciiArtFormComponent implements OnInit {
-  text: string = '';
+  text: string = 'oz';
   fontName: string = 'Isometric3';
   inputLengthMin: number = 2;
   inputLengthMax: number = 5;
