@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AsciiArtFormComponent } from './ascii-art-form/ascii-art-form.component';
 import { AsciiArtPipe } from './shared/ascii-art.pipe';
+import { LayoutModule } from '@angular/cdk/layout'; 
 
 @NgModule({
   declarations: [
